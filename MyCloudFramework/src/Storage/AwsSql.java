@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Integrity;
+package Storage;
 
 /**
  *
  * @author krb
  */
-public class TrustedTaskExecutor {
+public class AwsSql {
     
 }

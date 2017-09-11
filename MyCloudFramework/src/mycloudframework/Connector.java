@@ -10,10 +10,38 @@ package mycloudframework;
  * @author krb
  */
 public class Connector {
-    
-    public void connectToAWS(){
+
+    private String reply;
+    private String command;
+    private String authenticationData;
+    private String data;
+
+    public Connector() {
+        this.init();
+    }
+
+    public void init(){
+        this.authenticationData = "ThisIsaTestAuthenticationData";        
+        this.command = "store";
+        this.data = "";
     }
     
-    public void connectToGC(){
+    public String getAuthenticationData() {
+        return this.authenticationData;
+    }
+
+    public String getCommand() {
+        return this.command;
+    }
+
+    public void setReply(String reply) {
+        this.reply = reply;
+    }
+
+    public void reply() {
+        System.out.println(this.reply);
+    }
+    
+    public void receive(){
     }
 }
